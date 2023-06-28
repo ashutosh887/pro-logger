@@ -1,7 +1,15 @@
-package main
+package mylogger
 
-import "fmt"
+import "log"
 
-func main () {
-	fmt.Println("Pro Logger!")
+func LogInfo(message string) {
+	log.Printf("INFO - %v", message)
+}
+
+func LogWarning(message string) {
+	log.Printf("WARN - %v", message)
+}
+
+func LogError(message string) {
+	log.Printf("ERROR - %v", message)
 }
